@@ -8,12 +8,27 @@ const routes = [
     component: HomeView
   },
   {
-    path: '/dataBinding',
-    name: 'dataBinding',
+    path: '/formElement',
+    name: 'formElement',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/DataBinding.vue')
+    component: () => import(/* webpackChunkName: "about" */ '../views/component/FormElement.vue')
+  },
+  {
+    path: '/listRendering',
+    name: 'listRendering',
+    component: () => import('../views/component/ListRendering.vue')
+  },
+  {
+    path: '/if-show',
+    name: 'if-show',
+    component: () => import('../views/component/ifShowDirective.vue')
+  },
+  {
+    path: '/click',
+    name: 'click',
+    component: () => import('../views/component/OnClick.vue')
   }
 ]
 

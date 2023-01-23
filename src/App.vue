@@ -1,7 +1,10 @@
 <template>
   <nav>
     <router-link to="/">Home</router-link> |
-    <router-link to="/dataBinding">Data Binding</router-link>
+    <router-link to="/formElement">Data Binding</router-link> |
+    <router-link to="/listRendering">List Rendering</router-link> |
+    <router-link to="/if-show">if-show</router-link> |
+    <router-link to="/click">@click</router-link>
   </nav>
   <router-view/>
 </template>
